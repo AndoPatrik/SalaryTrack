@@ -9,9 +9,40 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Text="Calendar"
-                   FontSize="24"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"/>
+        <CalendarView Width="1400"
+                      Height="700"
+                      BorderThickness="10,10,10,10" 
+                      RequestedTheme="Default"
+                      Margin="175,0,0,350"
+                      x:Name="Calendar">
+
+        </CalendarView>
+
+        <TextBlock Text="Worked Hours"
+                 Margin="0,500,1200,0"
+                 Width="200" 
+                 Height="50"
+                 FontSize="20"
+                 >
+            
+        </TextBlock>
+        <TextBlock Text="Expected salary"
+                 Margin="0,500,600,0"
+                 Width="200" 
+                 Height="50"
+                 FontSize="20"
+                 >
+
+        </TextBlock>
+
+        <TextBlock Text="After Taxes"
+                 Margin="0,500,0,0"
+                 Width="200" 
+                 Height="50"
+                 FontSize="20"
+                 >
+
+        </TextBlock>
+
     </Grid>
 </Page>

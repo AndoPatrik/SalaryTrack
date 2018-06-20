@@ -7,7 +7,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid x:Name="AppTitleBar">
         <SplitView IsPaneOpen="True"
            DisplayMode="Inline"
            OpenPaneLength="100"
@@ -19,7 +19,8 @@
                         <Button Content="Profile"
                                 Height="50" 
                                 Width="100"
-                                x:Name="ProfileBtn">
+                                x:Name="ProfileBtn" 
+                                Click="ProfileBtn_Click">
 
                         </Button>
                     </StackPanel>
@@ -27,7 +28,8 @@
                         <Button Content="Calendar"
                                 Height="50"
                                 Width="100" 
-                                x:Name="CalendarBtn">
+                                x:Name="CalendarBtn" 
+                                Click="CalendarBtn_Click">
 
                         </Button>
                     </StackPanel>
@@ -35,7 +37,8 @@
                         <Button Content="Overview"
                                 Height="50" 
                                 Width="100"
-                                x:Name="OverviewBtn">
+                                x:Name="OverviewBtn"
+                                Click="OverviewBtn_Click">
                             
                         </Button>
                     </StackPanel>
