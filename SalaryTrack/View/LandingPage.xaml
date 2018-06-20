@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="SalaryTrack.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <SplitView IsPaneOpen="True"
+           DisplayMode="Inline"
+           OpenPaneLength="100"
+           x:Name="LandingSplitView">
+
+            <SplitView.Pane>
+                <StackPanel>
+                    <StackPanel Height="50">
+                        <Button Content="Profile"
+                                Height="50" 
+                                Width="100"
+                                x:Name="ProfileBtn">
+
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Height="50">
+                        <Button Content="Calendar"
+                                Height="50"
+                                Width="100" 
+                                x:Name="CalendarBtn">
+
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Height="50">
+                        <Button Content="Overview"
+                                Height="50" 
+                                Width="100"
+                                x:Name="OverviewBtn">
+                            
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+
+            <Grid>
+                <Frame x:Name="LandingFrame">
+                    
+                </Frame>
+            </Grid>
+
+        </SplitView>
+    </Grid>
+</Page>
