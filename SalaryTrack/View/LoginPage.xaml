@@ -9,28 +9,70 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBox PlaceholderText="Enter your ID"
-                 Width="200"
-                 Height="50"
-                 x:Name="IdBox">
-            
-        </TextBox>
+        <Pivot x:Name="Pivot" Width="400" Height="600" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="833,0,0,0">
+            <PivotItem Header="Sign In">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="43*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox PlaceholderText="Enter your ID"
+                             Width="200"
+                             Height="50"
+                             x:Name="IdBox" 
+                            
+                             Margin="0,100,176,402" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                            />
 
-        <PasswordBox Width="200" 
-                     Height="50"
-                     Margin="0,150,0,0"
-                     x:Name="PasswordBox"
-                     PlaceholderText="Enter your passord">
-            
-        </PasswordBox>
+                    <PasswordBox Width="200" 
+                                 Height="50"
+                                 x:Name="PasswordBox"
+                                 PlaceholderText="Enter your passord" Margin="0,182,176,320" Grid.ColumnSpan="2"
+                                 />
 
-        <Button x:Name="LoginBtn"
-                Width="200"
-                Height="50"
-                Content="LogIn"
-                Margin="850,300,0,0" 
-                Click="LoginBtn_Click">
-            
-        </Button>
+                    <Button x:Name="LoginBtn"
+                            Width="200"
+                            Height="50"
+                            Content="LogIn"
+                            Margin="0,334,0,0"
+                            Click="LoginBtn_Click" 
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Sign Up">
+                <Grid>
+                    <TextBox PlaceholderText="Enter your ID"
+                             Width="200"
+                             Height="50"
+                             x:Name="SignUpNameBox" 
+                            
+                             Margin="0,100,176,402" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                            />
+                    <TextBox PlaceholderText="Enter your ID"
+                        Width="200"
+                        Height="50"
+                        x:Name="SignUpNameBox_Copy" 
+                            
+                        Margin="0,182,176,320" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                            />
+                    <TextBox PlaceholderText="Enter your ID"
+                        Width="200"
+                        Height="50"
+                        x:Name="SignUpNameBox_Copy1" 
+                            
+                        Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" 
+                            />
+                    <TextBox PlaceholderText="Enter your ID"
+                        Width="200"
+                        Height="50"
+                        x:Name="SignUpNameBox_Copy2" 
+                            
+                        Margin="0,331,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                            />
+
+                </Grid>
+            </PivotItem>
+        </Pivot>
     </Grid>
 </Page>
