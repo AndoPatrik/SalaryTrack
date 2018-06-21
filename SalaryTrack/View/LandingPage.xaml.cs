@@ -49,5 +49,10 @@ namespace SalaryTrack
             LandingFrame.Navigate(typeof(OverviewPage));
         }
         #endregion
+
+        private void LogOutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LoginPage));
+        }
     }
 }

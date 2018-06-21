@@ -42,6 +42,15 @@
                             
                         </Button>
                     </StackPanel>
+                    <StackPanel Height="50">
+                        <Button Content="LogOut"
+                                Height="50" 
+                                Width="100"
+                                x:Name="LogOutBtn" Click="LogOutBtn_Click"
+                                >
+
+                        </Button>
+                    </StackPanel>
                 </StackPanel>
             </SplitView.Pane>
 
