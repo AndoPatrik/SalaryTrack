@@ -9,9 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="367*"/>
+            <RowDefinition Height="713*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="FirstNameTextBlock" Text="First Name" Margin="0,0,400,0" Width="200" Height="50" FontSize="24"></TextBlock>
+        <TextBlock x:Name="LastNameTextBlock" Text="Last Name" Margin="600,0,0,0" Width="200" Height="50" FontSize="24"></TextBlock>
+        
         <TextBlock Text="ProfilePage"
                    FontSize="24"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"/>
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center" Margin="0,156.577,0,0" Grid.Row="1"/>
     </Grid>
 </Page>
