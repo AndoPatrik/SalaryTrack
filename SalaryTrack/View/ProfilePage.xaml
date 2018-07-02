@@ -2,24 +2,83 @@
     x:Class="SalaryTrack.View.ProfilePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SalaryTrack.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="367*"/>
             <RowDefinition Height="713*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="FirstNameTextBlock" Text="First Name" Margin="0,0,400,0" Width="200" Height="50" FontSize="24"></TextBlock>
-        <TextBlock x:Name="LastNameTextBlock" Text="Last Name" Margin="600,0,0,0" Width="200" Height="50" FontSize="24"></TextBlock>
-        
-        <TextBlock Text="ProfilePage"
-                   FontSize="24"
-                   VerticalAlignment="Top"
-                   HorizontalAlignment="Center" Margin="0,156.577,0,0" Grid.Row="1"/>
+        <Grid Grid.Row="0" Background="#FFC9C6C6">
+            <TextBlock x:Name="FirstNameTextBlock"
+                       Text="John" 
+                       Margin="0,0,300,0" 
+                       Width="200"
+                       Height="50" 
+                       FontSize="32 ">
+
+            </TextBlock>
+            <TextBlock x:Name="LastNameTextBlock"
+                       Text="Doe"
+                       Margin="550,0,0,0"
+                       Width="200" 
+                       Height="50"
+                       FontSize="32">
+
+            </TextBlock>
+            <Rectangle Width="200"
+                       Height="200"
+                       x:Name="ProfileREctangle">
+                
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="ms-appx:///Assets/Square150x150Logo.png"/>
+                </Rectangle.Fill>
+
+            </Rectangle>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <TextBox Width="200"
+                     Height="50"
+                     x:Name="SalaryInputBox"
+                     PlaceholderText="Insert Salary">
+                
+            </TextBox>
+            <TextBox Width="200"
+                     Height="50"
+                     x:Name="WorkingHoursInputBox"
+                     Margin="0,150,0,0"
+                     PlaceholderText="Insert Hours">
+
+            </TextBox>
+            <TextBox Width="200"
+                     Height="50"
+                     x:Name="WagePerHoursInputBox"
+                     Margin="0,300,0,0"
+                     PlaceholderText="Insert Wage">
+
+            </TextBox>
+            <TextBox Width="200"
+                     Height="50"
+                     x:Name="JobInputBox"
+                     Margin="0,450,0,0"
+                     PlaceholderText="Insert Job">
+
+            </TextBox>
+            <Button x:Name="SaveChangesBtn"
+                    Content="SaveChanges"
+                    Width="200"
+                    Height="50"
+                    Margin="780,0,0,150">
+                
+            </Button>
+
+        </Grid>
+
     </Grid>
 </Page>
