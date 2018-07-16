@@ -74,7 +74,7 @@
                     Content="SaveChanges"
                     Width="200"
                     Height="50"
-                    Margin="780,0,0,150">
+                    Margin="780,0,0,150" Click="SaveChangesBtn_Click">
                 
             </Button>
             
