@@ -17,6 +17,8 @@ namespace SalaryTrackWebService.Models
     
         public SalaryTrackWebServiceContext() : base("name=SalaryTrackWebServiceContext")
         {
+            base.Configuration.LazyLoadingEnabled = false;
+            base.Configuration.ProxyCreationEnabled = false;
         }
 
         public System.Data.Entity.DbSet<SalaryTrackWebService.Models.Records> Records { get; set; }
