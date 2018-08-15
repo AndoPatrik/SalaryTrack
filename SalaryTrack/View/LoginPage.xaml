@@ -7,9 +7,9 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="White">
         <Pivot x:Name="Pivot" Width="400" Height="600" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="833,0,0,0">
-            <PivotItem Header="Sign In">
+            <PivotItem Header="Sign In" Background="#FFE5F6FF">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="4*"/>
@@ -19,13 +19,16 @@
                              Width="200"
                              Height="50"
                              x:Name="IdBox" 
-                            
+                             Grid.Column="1"
+                             Grid.Row="1"
                              Margin="0,100,176,402" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                             />
 
                     <PasswordBox Width="200" 
                                  Height="50"
                                  x:Name="PasswordBox"
+                                 Grid.Column="1"
+                                 Grid.Row="1"
                                  PlaceholderText="Enter your passord" Margin="0,182,176,320" Grid.ColumnSpan="2"
                                  />
 
@@ -36,41 +39,53 @@
                             Margin="0,334,0,0"
                             Click="LoginBtn_Click" 
                             HorizontalAlignment="Left"
+                            Grid.Column="1"
+                            Grid.Row="1"
                             VerticalAlignment="Top" Grid.ColumnSpan="2"/>
                 </Grid>
             </PivotItem>
-            <PivotItem Header="Sign Up">
+            <PivotItem Header="Sign Up" Background="#FFE5F6FF">
                 <Grid>
                     <TextBox PlaceholderText="Enter your username"
                              Width="200"
                              Height="50"
                              x:Name="UserNameSignUpBox" 
+                             Grid.Column="1"
+                             Grid.Row="1"
                              Margin="0,100,176,402" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                     />
                     
                     <PasswordBox PlaceholderText="Enter your password"
                         Width="200"
                         Height="50"
-                        x:Name="PasswordSignUpBox"    
+                        x:Name="PasswordSignUpBox" 
+                        Grid.Column="1"
+                        Grid.Row="1"
                         Margin="0,182,176,320" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                             />
                     <PasswordBox PlaceholderText="Enter password again"
                         Width="200"
                         Height="50"
                         x:Name="Password2SignUpBox"  
+                        Grid.Column="1"
+                        Grid.Row="1"
                         Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" 
                     />
                     <TextBox PlaceholderText="Enter your email address"
                         Width="200"
                         Height="50"
                         x:Name="EmailSignUpBox"    
+                        Grid.Column="1"
+                        Grid.Row="1"
                         Margin="0,331,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" 
                     />
                     <Button x:Name="SignUpBtn"
                             Width="200"
                             Height="50"
                             Content="LogIn"
-                            Margin="0,434,0,0" 
+                            Margin="0,434,0,0"
+                            Grid.Column="1"
+                            Grid.Row="1"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top" Grid.ColumnSpan="2" Click="SignUpBtn_Click"/>
                 </Grid>
